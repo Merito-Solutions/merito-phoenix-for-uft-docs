@@ -1,6 +1,6 @@
-# Merito Phoenix for UFT Console: Complete Field Guide
+# Merito Phoenix for UFT Console — Complete Field Guide
 
-This guide walks every screen, field, and button of the Phoenix for UFT
+This guide walks every screen, field, and button of the Merito Phoenix for UFT
 Migration Console (`uft-migrate-gui`) in wizard order. For each control you
 get what it does, when to change it, and a worked example. It is written for
 the engineer driving a migration — no CLI knowledge required. Deep failure
@@ -118,7 +118,7 @@ on Step 1 and shown on Steps 2–6, and it opens a different page,
 merito.com/book-consultation. Nothing on this screen affects the migration.
 
 **Get Quote** is about OpenText licenses and renewals and Merito's services.
-It has nothing to do with the Phoenix for UFT license that lifts the free
+It has nothing to do with the Merito Phoenix for UFT license that lifts the free
 edition's limit of 100 test cases, which has no control anywhere in the
 console ([licensing.md](licensing.md)). When an analysis counts more test
 cases than your edition converts, the step header card on Steps 2–6 names the
@@ -497,7 +497,7 @@ What that policy means in practice:
   (another user's or a stale one of your own — the server reverts to the
   latest checked-in version, which is exactly what gets converted), checks
   out fresh, converts, uploads, verifies, and checks in only after
-  post-upload verification passes (check-in comment "Phoenix for UFT migration:
+  post-upload verification passes (check-in comment "UFT Phoenix migration:
   AOM-canonical Python conversion (verified)"). Any failure after checkout
   abandons the checkout, so the server keeps its last checked-in version.
   `.pfl` function-library resources get the same checkout/check-in
@@ -507,7 +507,7 @@ What that policy means in practice:
   checkouts"-equivalent ALM permission; without it that asset fails as
   **Version control blocked** (see the remediation guide).
 - **A shared helper library is added to the project.** The first conversion
-  that needs it creates the Resources folder `Phoenix for UFT` and writes
+  that needs it creates the Resources folder `UFT Phoenix` and writes
   `PhoenixVBRuntime.pfl` there; later conversions merge new entries into it
   and never drop existing ones. Each converted test whose scripts use those
   helpers is linked and related to it. Analysis writes nothing. Restoring a
@@ -1080,7 +1080,7 @@ no installed license covers them:
   2–6 it names the count, and its button **Scope this conversion with
   Merito** opens Merito's consultation request form in your browser.
 - **Next stops with *Scoping Required*.** The dialog gives the notice, then
-  any installed license Phoenix did not use and why, under *Phoenix for UFT did
+  any installed license Phoenix did not use and why, under *Merito Phoenix for UFT did
   not use the installed license:*, then *How test cases are counted:* and
   the counting rule. Step 6 cannot be opened, unless the run folder holds
   a conversion that is still under way — an open ALM conversion wave or an
@@ -1094,7 +1094,7 @@ names the license. Only the reports this analysis wrote keep its *Scoping
 required* notice, until the next analysis.
 
 If you have a license and still see *Scoping Required*, read the dialog's
-*Phoenix for UFT did not use the installed license:* lines, or run
+*Merito Phoenix for UFT did not use the installed license:* lines, or run
 `uft-migrate license`: a license that expired, that names other ALM projects
 than this one, or that is installed for another Windows user only does not
 apply here.

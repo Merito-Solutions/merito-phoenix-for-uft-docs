@@ -7,10 +7,10 @@ published by Merito Solutions, Inc. for information only. It is not open
 source, and no license to copy, modify or redistribute it is granted, beyond
 viewing it and sharing links to it.
 
-Merito Phoenix for UFT, the software this documentation describes, is proprietary
-software of Merito Solutions, Inc. It is licensed separately, under the
-license agreement that accompanies the installer, a copy of which is in
-LICENSE. Nothing in this repository grants a license to the software.
+Merito Phoenix for UFT, the software this documentation describes, is
+proprietary software of Merito Solutions, Inc. It is licensed separately,
+under the license agreement that accompanies the installer, a copy of which
+is in LICENSE. Nothing in this repository grants a license to the software.
 
 OpenText, UFT One and Application Quality Management are trademarks of their
 respective owners. Microsoft, Windows and VBScript are trademarks of the

@@ -19,7 +19,7 @@ model), [gui_field_guide.md](gui_field_guide.md) (console reference),
   write to it, **and** can create folders and function-library resources in
   the Test Resources module and relate them to tests — conversion adds a
   `.pfl` function library for each converted `.qfl`, plus one shared helper
-  runtime library in a `Merito Phoenix for UFT` folder it creates under Resources. On a
+  runtime library in a `UFT Phoenix` folder it creates under Resources. On a
   version-controlled project the account also needs the ALM "Manage
   checkouts"-equivalent permission (Phase 4). Permission to run OTA SQL
   commands is optional: with it, conversion clears stale entity locks

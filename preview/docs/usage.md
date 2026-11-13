@@ -339,7 +339,7 @@ logs, and on ALM it signs in and reads the Test Plan to count the test cases.
 `message`, repeated in `error` and once on stderr, begins *Conversion
 refused. No test was converted, backed up or changed.* and says what to do.
 When an installed license expired and no other applies, the next sentences
-say so: *The Phoenix for UFT License File for Contoso Ltd expired on 2026-09-30.
+say so: *The Merito Phoenix for UFT License File for Contoso Ltd expired on 2026-09-30.
 The free edition now applies, covering conversions of up to 100 test
 cases.* The rest of
 the refusal says why:
@@ -405,7 +405,7 @@ installed license file cannot be used, saying why; with a license in use,
 such a file does not make the row warn, and the row names it after *Other
 license files:*. It warns when the license in use expires within 30 days;
 its `fix:` line then says what applies after that date. It also warns,
-with the fix *Reinstall Phoenix for UFT.*, when Phoenix's own license key is
+with the fix *Reinstall Merito Phoenix for UFT.*, when Phoenix's own license key is
 damaged. With `--json`
 the document also carries `license`, with the keys `edition`,
 `edition_label`, `licensee`, `limit`, `license_id`, `expires`, `alm_bindings`
@@ -449,7 +449,7 @@ prompt, the install folder's. `license show` lists the ids. When several
 installed licenses apply, the one that allows the most is used.
 
 Every action exits **0** when it did its work and **2** when it refused or
-failed: a file that is not a Phoenix for UFT license, a file Merito did not issue
+failed: a file that is not a Merito Phoenix for UFT license, a file Merito did not issue
 or that was changed, a license that has already expired, a file that needs a
 newer version of Phoenix, `--all-users` without administrator rights, or a
 license id that is not installed. A refused `install` prints
@@ -962,7 +962,7 @@ that the test passes. Do one of:
   marker-delimited and regenerated on re-conversion; do not hand-edit it.
 - **VBScript compatibility helpers** (upload conversions only) — kept in the
   shared function library `PhoenixVBRuntime.pfl`, in a Resources folder named
-  `Phoenix for UFT` that is created on first use and only ever **gains** entries, so
+  `UFT Phoenix` that is created on first use and only ever **gains** entries, so
   a script keeps running the exact helper text it was converted with. The
   library is linked and related to each converted test whose scripts use it, and
   those scripts carry a generated `# _phoenix_vb_runtime` block — placed after
@@ -1008,7 +1008,7 @@ Conversion flow per asset:
    exactly what gets converted.
 3. **Fresh check-out → convert → upload → post-upload verification.**
 4. **Check-in only after verification passes**, with the comment
-   `Phoenix for UFT migration: AOM-canonical Python conversion (verified)`.
+   `UFT Phoenix migration: AOM-canonical Python conversion (verified)`.
 
 Any failure after the checkout **abandons the checkout** (UndoCheckout), so
 the server keeps its last checked-in version — a failed conversion never

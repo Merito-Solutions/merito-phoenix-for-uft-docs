@@ -1,26 +1,26 @@
 ---
-title: Merito Phoenix for UFT: VBScript to Python migration for OpenText UFT One
-description: Phoenix for UFT converts OpenText UFT One VBScript tests to Python, from a local folder or a whole ALM project, with a safety model built for production test suites.
+title: Merito Phoenix for UFT — VBScript to Python migration for OpenText UFT One
+description: Merito Phoenix for UFT converts OpenText UFT One VBScript tests to Python, from a local folder or a whole ALM project, with a safety model built for production test suites.
 hide:
   - navigation
   - toc
 ---
 
 <p align="center">
-  <img src="assets/hero.webp" alt="Merito Phoenix for UFT: Migration Assistant for OpenText Functional Testing (UFT)" width="720">
+  <img src="assets/hero.webp" alt="Merito Phoenix for UFT — Migration Assistant for OpenText Functional Testing (UFT)" width="720">
 </p>
 
 # Move your UFT One tests from VBScript to Python { .phoenix-headline }
 
 VBScript is on Microsoft's deprecation path, and OpenText UFT One now runs
-tests written in Python. **Phoenix for UFT** does the conversion for you:
+tests written in Python. **Merito Phoenix for UFT** does the conversion for you:
 it reads your existing VBScript GUI tests and rebuilds them as UFT Python
 tests, so years of automation investment carries forward instead of being
 rewritten by hand.
 
-To request access to Phoenix for UFT, use the **Request access** button below.
+To request access to Merito Phoenix for UFT, use the **Request access** button below.
 
-[Request access](https://www.merito.com/request-access/phoenix-for-uft?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009){ .md-button .md-button--primary }
+[Request access](https://www.merito.com/request-access/uft-phoenix?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009){ .md-button .md-button--primary }
 [Talk to Merito](https://www.merito.com/book-consultation?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009){ .md-button }
 
 ---
@@ -66,7 +66,7 @@ size the migration with you. If you like, send us the scoping summary the
 analysis writes: it holds counts and summary figures, with no names, paths,
 identifiers or test code.
 
-[Request scoping](https://www.merito.com/solutions/phoenix-for-uft/scope?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009){ .md-button }
+[Request scoping](https://www.merito.com/solutions/uft-phoenix/scope?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009){ .md-button }
 
 A license is a file you install. Phoenix checks it on your own machine and
 never contacts Merito. [Free Edition and Licensing](licensing.md) explains how

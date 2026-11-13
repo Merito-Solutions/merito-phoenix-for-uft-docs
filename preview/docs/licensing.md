@@ -1,7 +1,7 @@
 # Free Edition and Licensing
 
-Merito Phoenix for UFT comes as a free edition. Its analysis runs at any size, and it
-converts an ALM project, or the tests under the source folders of one
+Merito Phoenix for UFT comes as a free edition. Its analysis runs at any size,
+and it converts an ALM project, or the tests under the source folders of one
 filesystem run, of up to 100 test cases. A larger conversion needs a license
 from Merito. This guide explains how Phoenix counts test cases, what happens
 over the limit, and how to install and check a license.
@@ -155,17 +155,17 @@ apart. The test-case count includes them, so it can be higher.
 
 The over-limit notice begins:
 
-> This conversion includes 150 test cases, by Phoenix for UFT's count. The free
-> edition of Phoenix for UFT covers conversions of up to 100 test cases. Until a
-> Merito Phoenix for UFT license covers this conversion, use these results for
-> assessment only, and don't convert or deploy any of its tests, including
-> tests built during analysis.
+> This conversion includes 150 test cases, by Merito Phoenix for UFT's count.
+> The free edition of Merito Phoenix for UFT covers conversions of up to 100
+> test cases. Until a Merito Phoenix for UFT license covers this conversion,
+> use these results for assessment only, and don't convert or deploy any of its
+> tests, including tests built during analysis.
 
 It then gives the address of Merito's consultation request form, points at
 the scoping summary, and ends by saying that it summarizes section 1.d of the
 license agreement, which governs. Over a license's own limit it names the
 license file's licensee and limit, and the ALM projects the license names, if
-it names any: *The Phoenix for UFT License File for Contoso Ltd covers
+it names any: *The Merito Phoenix for UFT License File for Contoso Ltd covers
 conversions of up to 500 test cases in ALM projects SALES/CRM and
 SALES/ERP.*
 
@@ -237,7 +237,7 @@ it too.
 To have a conversion over your edition's limit scoped, request a consultation
 on Merito's consultation request form:
 
-<https://www.merito.com/solutions/phoenix-for-uft/scope?utm_source=other&utm_medium=referral&utm_campaign=uft-phoenix-product-links-5100003>
+<https://www.merito.com/solutions/uft-phoenix/scope?utm_source=other&utm_medium=referral&utm_campaign=uft-phoenix-product-links-5100003>
 
 Sending Merito anything is your choice, and you are not obliged to send
 anything. Read the scoping summary before you send it. If you send it, or any
@@ -310,9 +310,10 @@ user of the PC. Either checks the file's signature and its expiry, copies it
 into the license folder as `<license id>.license.json`, and prints what it
 installed and the edition now in use. It exits **0** when the license is
 installed, or was already, and **2** when it refused the file and installed
-nothing: a file that is not a Phoenix for UFT license, a file Merito did not issue
-or that was changed, a license that has already expired, a file that needs a
-newer version of Phoenix, or `--all-users` without administrator rights.
+nothing: a file that is not a Merito Phoenix for UFT license, a file Merito did
+not issue or that was changed, a license that has already expired, a file that
+needs a newer version of Phoenix, or `--all-users` without administrator
+rights.
 
 `uft-migrate license` shows the edition in use, the license behind it, and
 why any other license file is not used.
@@ -334,7 +335,7 @@ For an unattended deployment, name the license file with
 `/LICENSEFILE="<path>"`, and pass `/LOG` too:
 
 ```
-MeritoUFTPhoenix-<version>-Setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /ACCEPTEULA /LICENSEFILE="C:\Deploy\PHX-20261012-3F9A2C.license.json" /LOG="C:\Windows\Temp\phoenix-install.log"
+MeritoPhoenixForUFT-<version>-Setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /ACCEPTEULA /LICENSEFILE="C:\Deploy\PHX-20261012-3F9A2C.license.json" /LOG="C:\Windows\Temp\phoenix-install.log"
 ```
 
 Setup installs the license for every user of the PC once the files are copied
@@ -402,9 +403,9 @@ When no other installed license applies, `uft-migrate license`, `doctor`,
 the console's *Scoping Required* dialogs and a refused conversion say so in
 these words:
 
-> The Phoenix for UFT License File for Contoso Ltd expired on 2026-09-30. The
-> free edition now applies, covering conversions of up to 100 test cases. If
-> this differs from your order with Merito, contact Merito at
+> The Merito Phoenix for UFT License File for Contoso Ltd expired on
+> 2026-09-30. The free edition now applies, covering conversions of up to 100
+> test cases. If this differs from your order with Merito, contact Merito at
 > \<consultation request form\>.
 
 Ask your Merito contact for a renewed license file. It has a license id of
@@ -424,9 +425,9 @@ ignored.
   consultation request form in the over-limit notice, in the reports and on
   **Scope this conversion with Merito**, and the console's **Get Quote** and
   **Book a migration services consultation**. Each address carries a campaign
-  tag that tells Merito the visit came from Phoenix for UFT, and no test names,
-  counts or other data about your tests or your environment. Following the
-  link a conversion over its limit shows does tell Merito that a conversion
+  tag that tells Merito the visit came from Merito Phoenix for UFT, and no test
+  names, counts or other data about your tests or your environment. Following
+  the link a conversion over its limit shows does tell Merito that a conversion
   was over its limit. Your visit to Merito's website is governed by Merito's
   Privacy Policy,
   <https://www.merito.com/legal-docs/commercial-privacy-policy.pdf>, and its

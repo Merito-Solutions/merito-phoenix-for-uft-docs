@@ -1,4 +1,4 @@
-# MkDocs Material configuration for the public Phoenix for UFT documentation.
+# MkDocs Material configuration for the public Merito Phoenix for UFT documentation.
 #
 # A template: sync_to_github.py fills the {{...}} values from
 # publish-docs-info.yml and writes the nav from manifest.yml. Keep
@@ -12,7 +12,7 @@ site_name: Merito Phoenix for UFT
 site_description: Convert OpenText UFT One VBScript tests to Python — from a folder of tests or a whole ALM project.
 site_author: Merito
 site_url: https://merito-solutions.github.io/merito-phoenix-for-uft-docs/preview/
-copyright: "&copy; Merito Solutions, Inc. All rights reserved. Merito Phoenix for UFT 1.4.1."
+copyright: "&copy; Merito Solutions, Inc. All rights reserved. Merito Phoenix for UFT 1.5.0."
 
 repo_url: https://github.com/Merito-Solutions/merito-phoenix-for-uft-docs
 repo_name: "Merito-Solutions/merito-phoenix-for-uft-docs"
@@ -62,7 +62,7 @@ extra:
   # true only for a --preview publish: noindex pages and a Preview banner.
   preview: true
   # A preview's branch, commit and publish time, shown in its banner.
-  preview_source: "branch feature/MWEB-566-phoenix-for-uft-display-name, commit fc75bf3, published 2026-11-13 23:13 UTC"
+  preview_source: "branch rebrand/merito-phoenix-for-uft, commit 486e017, published 2026-11-13 23:45 UTC"
   generator: false
   social:
     - icon: fontawesome/solid/globe
@@ -70,7 +70,7 @@ extra:
       name: Merito
     - icon: fontawesome/brands/github
       link: https://github.com/Merito-Solutions/merito-phoenix-for-uft-docs
-      name: Phoenix for UFT on GitHub
+      name: Merito Phoenix for UFT on GitHub
 
 markdown_extensions:
   - tables

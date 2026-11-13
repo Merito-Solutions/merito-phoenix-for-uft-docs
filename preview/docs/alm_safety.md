@@ -142,7 +142,7 @@ complete inventory of those writes.
    checkout — another user's or a stale one of your own; the server reverts
    to the latest checked-in version, which is exactly what gets converted —
    then checks out fresh, converts, uploads, verifies, and **checks in only
-   after post-upload verification passes** (check-in comment "Merito Phoenix for UFT
+   after post-upload verification passes** (check-in comment "UFT Phoenix
    migration: AOM-canonical Python conversion (verified)"). Any failure
    after checkout **abandons the checkout**, so the server keeps its last
    checked-in version. Undoing another user's checkout requires the "Manage
@@ -152,7 +152,7 @@ complete inventory of those writes.
 
    **Converted `.pfl` function libraries are handled differently, and more
    eagerly.** Each one is checked out, uploaded and checked in straight away
-   (check-in comment "Merito Phoenix for UFT migration: Python function library (.pfl)
+   (check-in comment "UFT Phoenix migration: Python function library (.pfl)
    content"), with the content read back from the server to prove it landed
    and one retry if it did not — all of this **before** the test that links
    it is built, uploaded or verified. A later failure of that test abandons

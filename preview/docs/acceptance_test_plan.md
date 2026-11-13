@@ -843,8 +843,8 @@ switch refuses this step otherwise.
    the ALM project and test names appear as tokens (`project-1`,
    `test-…`); `TRIAGE.md` names the run's failure. The run folder's file times
    are unchanged.
-6. Close the Migration Console. Start **Start Menu > Merito > Merito UFT
-   Phoenix Collect Diagnostics** (typing *collect diagnostics* in Start search
+6. Close the Migration Console. Start **Start Menu > Merito > Merito Phoenix
+   for UFT Collect Diagnostics** (typing *collect diagnostics* in Start search
    finds it).
 7. PASS: no Migration Console opens. When step 3 asked its question, the same
    question appears; answer **No**. A small window reads *Collecting
@@ -900,7 +900,7 @@ PowerShell:
    earns on its own (GO for a clean test), its line reading *Scoping
    required: 101 test cases, over the free edition limit of 100.* The status
    line ends with the over-limit notice, which begins *This conversion
-   includes 101 test cases, by Phoenix for UFT's count.* and names Merito's
+   includes 101 test cases, by Merito Phoenix for UFT's count.* and names Merito's
    consultation request form.
    The step header card reads *101 test cases, over the free edition limit of
    100.*, and its button **Scope this conversion with Merito** opens the
@@ -968,7 +968,7 @@ keep the Migration Console open on Step 5 with TC-29's analysis.
    licensee's name. From a Command Prompt opened with **Run as
    administrator**: `uft-migrate license install "<the changed copy>"
    --all-users`. PASS: exit code 2 and *License not installed:* … *was
-   changed after Merito issued it, or Merito did not issue it. Phoenix for UFT
+   changed after Merito issued it, or Merito did not issue it. Merito Phoenix for UFT
    ignores it.*; `<install folder>\licenses\` is unchanged, and
    `uft-migrate license` still names the free edition.
 2. From the same prompt: `uft-migrate license install "<the license file>"
@@ -996,7 +996,7 @@ keep the Migration Console open on Step 5 with TC-29's analysis.
    installed.
 7. Optional — silent deployment, from an administrator Command Prompt on a
    machine without Phoenix; read each exit code with `echo %ERRORLEVEL%`:
-   `start /wait MeritoUFTPhoenix-<version>-Setup.exe /VERYSILENT
+   `start /wait MeritoPhoenixForUFT-<version>-Setup.exe /VERYSILENT
    /SUPPRESSMSGBOXES /NORESTART /ACCEPTEULA /LICENSEFILE="<full path>"
    /LOG="C:\Windows\Temp\phoenix-install.log"`. PASS: exit code 0; the log
    has `license:` lines, the last reading *installed for all users from* and
