@@ -62,7 +62,7 @@ extra:
   # true only for a --preview publish: noindex pages and a Preview banner.
   preview: true
   # A preview's branch, commit and publish time, shown in its banner.
-  preview_source: "branch feat/P4UFT-9-docs-repo-rename, commit 44ed11b, published 2026-11-13 22:30 UTC"
+  preview_source: "branch feat/P4UFT-9-docs-repo-rename, commit f9d0d41, published 2026-11-13 22:41 UTC"
   generator: false
   social:
     - icon: fontawesome/solid/globe
