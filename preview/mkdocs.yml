@@ -62,7 +62,7 @@ extra:
   # true only for a --preview publish: noindex pages and a Preview banner.
   preview: true
   # A preview's branch, commit and publish time, shown in its banner.
-  preview_source: "branch feature/MWEB-566-phoenix-for-uft-display-name, commit fc75bf3, published 2026-11-13 23:06 UTC"
+  preview_source: "branch feature/MWEB-566-phoenix-for-uft-display-name, commit fc75bf3, published 2026-11-13 23:13 UTC"
   generator: false
   social:
     - icon: fontawesome/solid/globe
