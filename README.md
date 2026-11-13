@@ -6,7 +6,7 @@
 
 
 <p align="center">
-  <a href="https://merito-solutions.github.io/uft-phoenix-docs/">
+  <a href="https://merito-solutions.github.io/merito-phoenix-for-uft-docs/">
     <img src="docs/assets/hero.webp" alt="Merito UFT Phoenix — Migration Assistant for OpenText Functional Testing (UFT)" width="640">
   </a>
 </p>
@@ -14,17 +14,17 @@
 <h3 align="center">Convert OpenText UFT One tests from VBScript to Python — safely, at enterprise scale.</h3>
 
 <p align="center">
-  <a href="https://github.com/Merito-Solutions/uft-phoenix-docs/tags"><img alt="Release" src="https://img.shields.io/github/v/tag/Merito-Solutions/uft-phoenix-docs?label=release&color=ef5325&style=flat-square"></a>
+  <a href="https://github.com/Merito-Solutions/merito-phoenix-for-uft-docs/tags"><img alt="Release" src="https://img.shields.io/github/v/tag/Merito-Solutions/merito-phoenix-for-uft-docs?label=release&color=ef5325&style=flat-square"></a>
   <img alt="UFT One 26.1" src="https://img.shields.io/badge/UFT%20One-26.1-2f8483?style=flat-square">
   <img alt="ALM 24.1 | 25.1 | 26.1" src="https://img.shields.io/badge/ALM-24.1%20%7C%2025.1%20%7C%2026.1-2f8483?style=flat-square">
   <img alt="Windows 10 | 11 | Server 2019+" src="https://img.shields.io/badge/Windows-10%20%7C%2011%20%7C%20Server%202019%2B-0d2028?style=flat-square&logo=windows&logoColor=white">
   <img alt="VBScript to Python" src="https://img.shields.io/badge/VBScript%20%E2%86%92%20Python-3776AB?style=flat-square&logo=python&logoColor=ffd343">
   <a href="https://www.merito.com/request-access/uft-phoenix?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009"><img alt="Access by request" src="https://img.shields.io/badge/access-by%20request-f7931e?style=flat-square"></a>
-  <a href="https://github.com/Merito-Solutions/uft-phoenix-docs/actions/workflows/pages.yml"><img alt="Docs" src="https://img.shields.io/github/actions/workflow/status/Merito-Solutions/uft-phoenix-docs/pages.yml?label=docs&style=flat-square"></a>
+  <a href="https://github.com/Merito-Solutions/merito-phoenix-for-uft-docs/actions/workflows/pages.yml"><img alt="Docs" src="https://img.shields.io/github/actions/workflow/status/Merito-Solutions/merito-phoenix-for-uft-docs/pages.yml?label=docs&style=flat-square"></a>
 </p>
 
 <p align="center">
-  <a href="https://merito-solutions.github.io/uft-phoenix-docs/"><strong>Read the documentation »</strong></a>
+  <a href="https://merito-solutions.github.io/merito-phoenix-for-uft-docs/"><strong>Read the documentation »</strong></a>
   &nbsp;·&nbsp;
   <a href="https://www.merito.com/request-access/uft-phoenix?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009">Request access</a>
   &nbsp;·&nbsp;
@@ -49,41 +49,41 @@ investment carries forward instead of being rewritten by hand.
 - **Free for conversions of up to 100 test cases.** The analysis has no
   limit; a larger conversion needs a license from Merito —
   [request scoping](https://www.merito.com/solutions/uft-phoenix/scope?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009), and read
-  [how test cases are counted](https://merito-solutions.github.io/uft-phoenix-docs/licensing/).
+  [how test cases are counted](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/licensing/).
 
 To request access to UFT Phoenix, use the
 [request access](https://www.merito.com/request-access/uft-phoenix?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009) link.
 
 ## Documentation
 
-The full documentation is published at **[https://merito-solutions.github.io/uft-phoenix-docs/](https://merito-solutions.github.io/uft-phoenix-docs/)**.
+The full documentation is published at **[https://merito-solutions.github.io/merito-phoenix-for-uft-docs/](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/)**.
 
 **Getting Started**
 
 | Guide | What it covers |
 | --- | --- |
-| [Installation](https://merito-solutions.github.io/uft-phoenix-docs/install/) | Prerequisites, the Windows installer (interactive and silent) and the environment check. |
-| [Usage](https://merito-solutions.github.io/uft-phoenix-docs/usage/) | Both conversion paths — a local folder of tests or a whole ALM project — end to end. |
-| [Supported Versions](https://merito-solutions.github.io/uft-phoenix-docs/supported_versions/) | Supported Windows, UFT One and ALM versions, and exactly what converts. |
-| [Free Edition and Licensing](https://merito-solutions.github.io/uft-phoenix-docs/licensing/) | What the free edition converts, how test cases are counted, and how to install and check a license. |
+| [Installation](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/install/) | Prerequisites, the Windows installer (interactive and silent) and the environment check. |
+| [Usage](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/usage/) | Both conversion paths — a local folder of tests or a whole ALM project — end to end. |
+| [Supported Versions](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/supported_versions/) | Supported Windows, UFT One and ALM versions, and exactly what converts. |
+| [Free Edition and Licensing](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/licensing/) | What the free edition converts, how test cases are counted, and how to install and check a license. |
 
 **Using the Console**
 
 | Guide | What it covers |
 | --- | --- |
-| [Console Field Guide](https://merito-solutions.github.io/uft-phoenix-docs/gui_field_guide/) | Every screen, field and button of the Migration Console, in wizard order. |
-| [Migration Playbook](https://merito-solutions.github.io/uft-phoenix-docs/playbook/) | The enterprise engagement sequence, phase by phase, with exit criteria. |
-| [Acceptance Test Plan](https://merito-solutions.github.io/uft-phoenix-docs/acceptance_test_plan/) | A hands-on validation walkthrough with a sign-off matrix. |
+| [Console Field Guide](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/gui_field_guide/) | Every screen, field and button of the Migration Console, in wizard order. |
+| [Migration Playbook](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/playbook/) | The enterprise engagement sequence, phase by phase, with exit criteria. |
+| [Acceptance Test Plan](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/acceptance_test_plan/) | A hands-on validation walkthrough with a sign-off matrix. |
 
 **Safety & Operations**
 
 | Guide | What it covers |
 | --- | --- |
-| [ALM Safety](https://merito-solutions.github.io/uft-phoenix-docs/alm_safety/) | The write-safety model, everything a conversion writes to ALM, and how rollback works. |
-| [Blocker Remediation](https://merito-solutions.github.io/uft-phoenix-docs/remediation/) | How to fix each blocker that keeps a test from converting. |
-| [Troubleshooting](https://merito-solutions.github.io/uft-phoenix-docs/troubleshooting/) | Diagnosing environment, conversion and upload problems, and collecting diagnostics for Merito support. |
-| [Advanced Troubleshooting](https://merito-solutions.github.io/uft-phoenix-docs/advanced_troubleshooting/) | Deep diagnostics for support engineers and migration leads. |
-| [Known Limitations](https://merito-solutions.github.io/uft-phoenix-docs/limitations/) | What Phoenix does not do, and the constructs that need a human. |
+| [ALM Safety](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/alm_safety/) | The write-safety model, everything a conversion writes to ALM, and how rollback works. |
+| [Blocker Remediation](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/remediation/) | How to fix each blocker that keeps a test from converting. |
+| [Troubleshooting](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/troubleshooting/) | Diagnosing environment, conversion and upload problems, and collecting diagnostics for Merito support. |
+| [Advanced Troubleshooting](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/advanced_troubleshooting/) | Deep diagnostics for support engineers and migration leads. |
+| [Known Limitations](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/limitations/) | What Phoenix does not do, and the constructs that need a human. |
 
 ## Let Merito lead your migration
 
