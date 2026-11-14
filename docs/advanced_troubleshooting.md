@@ -1206,8 +1206,8 @@ it may be half-written.
 
 **Reading a diagnostics bundle.** Rather than the run folder, ask for a support
 bundle: *Collect Diagnostics…* in the Migration Console (the Yes of its
-*Conversion Failed* dialog runs it too), **Start Menu > Merito > Merito UFT
-Phoenix Collect Diagnostics**, which needs no Migration Console, or
+*Conversion Failed* dialog runs it too), **Start Menu > Merito > Merito Phoenix
+for UFT Collect Diagnostics**, which needs no Migration Console, or
 `uft-migrate diagnostics collect` ([troubleshooting.md](troubleshooting.md) §
 *Collect diagnostics for Merito support*). The logs are always written and
 kept up to 30 days, and every way to collect reaches that far back, so a recent
@@ -1225,7 +1225,7 @@ It is a zip under `out\_support\`, beside a folder of the same files:
 | `run\run-1\` | The run folder's allow-listed files under their own relative paths: the journal, `migration_log.txt`, the breadcrumbs, the results and `crash_recovery\` |
 
 ALM names in it are tokens (`project-1`, `test-3f9a2c`), and so is the
-licensee of a UFT Phoenix license (`licensee-1`), with the ALM projects a
+licensee of a Merito Phoenix for UFT license (`licensee-1`), with the ALM projects a
 license names, wherever a `licensee` field or Phoenix's own license sentences
 carry them; numeric test ids are kept, and the map back to the real names
 stays with the customer.

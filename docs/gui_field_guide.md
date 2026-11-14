@@ -1,6 +1,6 @@
-# UFT Phoenix Console — Complete Field Guide
+# Merito Phoenix for UFT Console — Complete Field Guide
 
-This guide walks every screen, field, and button of the UFT Phoenix
+This guide walks every screen, field, and button of the Merito Phoenix for UFT
 Migration Console (`uft-migrate-gui`) in wizard order. For each control you
 get what it does, when to change it, and a worked example. It is written for
 the engineer driving a migration — no CLI knowledge required. Deep failure
@@ -63,7 +63,7 @@ diagnostics for Merito support*.
 
 The button is one of three ways in. When a conversion fails, its *Conversion
 Failed* dialog asks whether to collect at once (see *Run Analysis* in Step 5
-below). And **Start Menu > Merito > Merito UFT Phoenix Collect Diagnostics**
+below). And **Start Menu > Merito > Merito Phoenix for UFT Collect Diagnostics**
 collects without the console at all — after you closed it, or when it will not
 start — with the same question about crash dumps and test scripts, a small
 *Collecting diagnostics for Merito support…* window while it works, and the
@@ -118,7 +118,7 @@ on Step 1 and shown on Steps 2–6, and it opens a different page,
 merito.com/book-consultation. Nothing on this screen affects the migration.
 
 **Get Quote** is about OpenText licenses and renewals and Merito's services.
-It has nothing to do with the UFT Phoenix license that lifts the free
+It has nothing to do with the Merito Phoenix for UFT license that lifts the free
 edition's limit of 100 test cases, which has no control anywhere in the
 console ([licensing.md](licensing.md)). When an analysis counts more test
 cases than your edition converts, the step header card on Steps 2–6 names the
@@ -1080,7 +1080,7 @@ no installed license covers them:
   2–6 it names the count, and its button **Scope this conversion with
   Merito** opens Merito's consultation request form in your browser.
 - **Next stops with *Scoping Required*.** The dialog gives the notice, then
-  any installed license Phoenix did not use and why, under *UFT Phoenix did
+  any installed license Phoenix did not use and why, under *Merito Phoenix for UFT did
   not use the installed license:*, then *How test cases are counted:* and
   the counting rule. Step 6 cannot be opened, unless the run folder holds
   a conversion that is still under way — an open ALM conversion wave or an
@@ -1094,7 +1094,7 @@ names the license. Only the reports this analysis wrote keep its *Scoping
 required* notice, until the next analysis.
 
 If you have a license and still see *Scoping Required*, read the dialog's
-*UFT Phoenix did not use the installed license:* lines, or run
+*Merito Phoenix for UFT did not use the installed license:* lines, or run
 `uft-migrate license`: a license that expired, that names other ALM projects
 than this one, or that is installed for another Windows user only does not
 apply here.

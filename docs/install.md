@@ -2,8 +2,8 @@
 
 Three things to settle before you start:
 
-- **Installing requires administrator rights.** Merito UFT Phoenix installs
-  per-machine, into `C:\Program Files (x86)\Merito\UFT Phoenix`, and setup
+- **Installing requires administrator rights.** Merito Phoenix for UFT installs
+  per-machine, into `C:\Program Files (x86)\Merito\Phoenix for UFT`, and setup
   will not continue without elevation. One install then serves every user of
   the machine.
 - **The install is still fully offline.** Nothing is downloaded, and no Python
@@ -43,7 +43,7 @@ interpreter.
 ## Verify the download
 
 The installer is code-signed by Merito Solutions, Inc. Before you run it,
-right-click `MeritoUFTPhoenix-<version>-Setup.exe`, open **Properties >
+right-click `MeritoPhoenixForUFT-<version>-Setup.exe`, open **Properties >
 Digital Signatures**, and confirm the signer is Merito Solutions, Inc. The UAC
 prompt shows the same name as the verified publisher. If the signature is
 missing or invalid, or names another publisher, do not run the file and
@@ -54,26 +54,30 @@ notes for the team that pushes it out.
 
 ## Install
 
-1. Run `MeritoUFTPhoenix-<version>-Setup.exe` and accept the UAC prompt.
+1. Run `MeritoPhoenixForUFT-<version>-Setup.exe` and accept the UAC prompt.
 2. Read and accept the license agreement on the **License Agreement** page.
    Setup shows it on every install and upgrade. Declining ends setup without
    installing anything, with exit code `2`.
 3. If a 1.0.x per-user installation is found, a **Previous version found** page
    lists what it found and offers to remove it, checked by default.
 4. Choose the install folder. The default is
-   `C:\Program Files (x86)\Merito\UFT Phoenix`.
+   `C:\Program Files (x86)\Merito\Phoenix for UFT`. An upgrade keeps the
+   folder the product was installed to, so a machine that already has 1.1 to
+   1.4 in the default folder keeps `C:\Program Files (x86)\Merito\UFT Phoenix`.
+   So does a reinstall after an uninstall while that folder still exists, so
+   the licenses installed for all users there keep working.
 5. Choose the optional tasks:
 
 | Task | Default | Effect |
 | --- | --- | --- |
-| Create a Start Menu shortcut | **Checked** | Adds **Start Menu > Merito**, holding *Merito UFT Phoenix* (the GUI), *Merito UFT Phoenix Collect Diagnostics* (saves a support bundle for Merito support on this PC without opening the Migration Console, so it also works after the console was closed or when it will not start; nothing is sent), *Merito UFT Phoenix Documentation* (opens `<install folder>\docs`) and *Uninstall Merito UFT Phoenix*. |
+| Create a Start Menu shortcut | **Checked** | Adds **Start Menu > Merito**, holding *Merito Phoenix for UFT* (the GUI), *Merito Phoenix for UFT Collect Diagnostics* (saves a support bundle for Merito support on this PC without opening the Migration Console, so it also works after the console was closed or when it will not start; nothing is sent), *Merito Phoenix for UFT Documentation* (opens `<install folder>\docs`) and *Uninstall Merito Phoenix for UFT*. |
 | Create a desktop shortcut | Unchecked | Adds an All-Users desktop shortcut to the Migration Console. |
-| Add Merito UFT Phoenix to the system PATH | **Checked** | Adds `<install folder>\bin` to the machine PATH, which puts `uft-migrate` and `uft-migrate-gui` on **new** terminals for every user. Terminals already open keep the old PATH. |
+| Add Merito Phoenix for UFT to the system PATH | **Checked** | Adds `<install folder>\bin` to the machine PATH, which puts `uft-migrate` and `uft-migrate-gui` on **new** terminals for every user. Terminals already open keep the old PATH. |
 
 After copying, setup verifies what it installed by running the product's
 `--version` on its own runtime. If that does not exit cleanly the install is
 **rolled back** and setup tells you to re-download — a corrupt or partially
-written payload is caught here rather than on the customer's first conversion. It also registers Merito UFT Phoenix in Apps & Features and records
+written payload is caught here rather than on the customer's first conversion. It also registers Merito Phoenix for UFT in Apps & Features and records
 who accepted the license, when (UTC), the product version and whether the
 install was interactive or silent, in `<install folder>\eula_accepted.txt`.
 
@@ -82,7 +86,7 @@ sealed Python runtime, the commit the build sealed, the build date and a
 SHA-256 for the sealed runtime and for each bundled component wheel. Quote it
 when you contact support, or send a diagnostics bundle, which records it with
 the rest of the environment (*Collect Diagnostics…* in the Migration Console,
-or **Start Menu > Merito > Merito UFT Phoenix Collect Diagnostics**; see
+or **Start Menu > Merito > Merito Phoenix for UFT Collect Diagnostics**; see
 [troubleshooting.md](troubleshooting.md) § *Collect diagnostics for Merito
 support*). `LICENSE` and `THIRD-PARTY-NOTICES.txt` are installed beside it.
 
@@ -108,11 +112,11 @@ release was per-user and had to run as the signed-in user. One per-machine
 install now serves everyone on the machine.
 
 ```
-MeritoUFTPhoenix-<version>-Setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /ACCEPTEULA
+MeritoPhoenixForUFT-<version>-Setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /ACCEPTEULA
 ```
 
 ```
-MeritoUFTPhoenix-<version>-Setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /ACCEPTEULA /DIR="D:\Apps\Merito\UFT Phoenix" /MERGETASKS="startmenu,addtopath,!desktopicon" /LOG="C:\Windows\Temp\phoenix-install.log" /RUNDOCTOR
+MeritoPhoenixForUFT-<version>-Setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /ACCEPTEULA /DIR="D:\Apps\Merito\Phoenix for UFT" /MERGETASKS="startmenu,addtopath,!desktopicon" /LOG="C:\Windows\Temp\phoenix-install.log" /RUNDOCTOR
 ```
 
 | Switch | Effect |
@@ -121,7 +125,7 @@ MeritoUFTPhoenix-<version>-Setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /A
 | `/SUPPRESSMSGBOXES` | Suppress the message boxes a silent run can still raise. Without it, an error box can hang a deployment on a machine nobody is watching. |
 | `/NORESTART` | Never restart the machine on setup's own initiative. Nothing this installer does is expected to need a restart — it unpacks files and sets the machine PATH — but pass it anyway so an unattended deployment can never reboot a machine out from under whoever is using it. |
 | `/ACCEPTEULA` | Accepts the agreement in `LICENSE` without prompting; the acceptance is recorded in `<install folder>\eula_accepted.txt`. **Required for a silent install** — a silent run without it installs nothing and exits `2`. Deploying with it constitutes acceptance by your organization. Accepting it does not change a signed order form or statement of work with Merito; where they differ, the signed document prevails. |
-| `/DIR="<path>"` | Install somewhere other than `C:\Program Files (x86)\Merito\UFT Phoenix`. |
+| `/DIR="<path>"` | Install somewhere other than `C:\Program Files (x86)\Merito\Phoenix for UFT`. |
 | `/MERGETASKS="..."` | Task selection, merged with the defaults in the table above: name a task to select it, prefix it with `!` to clear it. The task names are `startmenu`, `desktopicon` and `addtopath`. |
 | `/LOG="<path>"` | Write a verbose install log. Worth setting: the log is where a silent run reports the legacy 1.0.x installations it found but could not remove. |
 | `/RUNDOCTOR` | Run the environment preflight after installing and record its findings. It does **not** change the installer's exit code; to gate a deployment on a ready machine, run doctor as a separate step (below). |
@@ -154,12 +158,15 @@ environment check as its own step and read *its* exit code (`1` = at least one
 check failed):
 
 ```
-"C:\Program Files (x86)\Merito\UFT Phoenix\bin\uft-migrate.cmd" doctor
+"C:\Program Files (x86)\Merito\Phoenix for UFT\bin\uft-migrate.cmd" doctor
 ```
 
 Use the full path — the process that ran the installer does not see the new
 PATH entry — and run it from a writable folder, because `doctor` also checks
-that it can write `out\` under the folder it starts in.
+that it can write `out\` under the folder it starts in. On a machine upgraded
+from 1.4 or earlier the folder is still
+`C:\Program Files (x86)\Merito\UFT Phoenix`: use the folder the product is
+installed in, here and in the license command below.
 
 ### Installing a license
 
@@ -176,7 +183,7 @@ To deploy a license with the product, name it with `/LICENSEFILE=`, and pass
 `/LOG` so the log records what happened to it:
 
 ```
-MeritoUFTPhoenix-<version>-Setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /ACCEPTEULA /LICENSEFILE="C:\Deploy\PHX-20261012-3F9A2C.license.json" /LOG="C:\Windows\Temp\phoenix-install.log"
+MeritoPhoenixForUFT-<version>-Setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /ACCEPTEULA /LICENSEFILE="C:\Deploy\PHX-20261012-3F9A2C.license.json" /LOG="C:\Windows\Temp\phoenix-install.log"
 ```
 
 Once the files are copied and the installed product has passed its
@@ -208,7 +215,7 @@ it refused the file and installed nothing. For every user, from a Command
 Prompt opened with **Run as administrator**:
 
 ```
-"C:\Program Files (x86)\Merito\UFT Phoenix\bin\uft-migrate.cmd" license install "C:\Deploy\PHX-20261012-3F9A2C.license.json" --all-users
+"C:\Program Files (x86)\Merito\Phoenix for UFT\bin\uft-migrate.cmd" license install "C:\Deploy\PHX-20261012-3F9A2C.license.json" --all-users
 ```
 
 Leave out `--all-users` to install it for yourself only, with no
@@ -252,12 +259,19 @@ part-way leaves neither version working, and the way out is to run the
 installer again. Do not start one on a machine that is mid-engagement without
 the time to see it finish.
 
-With that understood: run the newer `MeritoUFTPhoenix-<version>-Setup.exe`
+With that understood: run the newer `MeritoPhoenixForUFT-<version>-Setup.exe`
 over the existing installation. It upgrades in place and keeps the Start Menu
 entries, the PATH entry and the Apps & Features registration; uninstalling
-first is neither necessary nor helpful. If you installed to a folder other
-than the default, pass the same `/DIR` again — without it the upgrade installs
-a second copy in the default location and leaves the first one behind.
+first is neither necessary nor helpful. The upgrade finds the existing
+installation and installs into the same folder, including a folder chosen with
+`/DIR`, so a machine that has 1.1 to 1.4 in the default folder stays in
+`C:\Program Files (x86)\Merito\UFT Phoenix`. An upgrade does not need `/DIR`;
+if you pass it anyway, give the folder the product is already installed in.
+
+The upgrade renames the product's Start Menu and desktop shortcuts and its
+Apps & Features entry from *Merito UFT Phoenix* to *Merito Phoenix for UFT*,
+under the same registry key. Update any software-deployment detection rule
+that matches the old name or the old install folder.
 
 Anything of your own under `runtime\`, `bin\` or `docs\` goes with the
 upgrade. Keep nothing of your own there; run folders belong under the folder
@@ -339,15 +353,15 @@ driving conversions *and* every host that will execute converted tests.
 
 Uninstalling needs administrator rights, like the install.
 
-**Settings > Apps > Merito UFT Phoenix**, or **Start Menu > Merito > Uninstall
-Merito UFT Phoenix**. For a scripted removal, use the `QuietUninstallString`
+**Settings > Apps > Merito Phoenix for UFT**, or **Start Menu > Merito > Uninstall
+Merito Phoenix for UFT**. For a scripted removal, use the `QuietUninstallString`
 from the product's Apps & Features registry key — on 64-bit Windows,
 `HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{844C27F4-84D9-4D20-BC97-63A5FFD6A8FF}_is1`,
 because setup is a 32-bit process and writes to the 32-bit registry view. The
 generated uninstaller accepts `/VERYSILENT /SUPPRESSMSGBOXES /NORESTART`.
 
 Uninstalling removes the install folder, the Start Menu shortcuts (*Merito
-UFT Phoenix Collect Diagnostics* among them) and the desktop shortcut, the
+Phoenix for UFT Collect Diagnostics* among them) and the desktop shortcut, the
 machine PATH entry, the recorded license acceptance and the Apps &
 Features entry — except for installed license files. A license is a paid
 entitlement, and uninstalling and reinstalling is a standard repair, so
@@ -399,7 +413,7 @@ folder, so they need no administrator rights to change.
 
 ## Installing from source
 
-`MeritoUFTPhoenix-<version>-Setup.exe` is the supported way to install Merito
-UFT Phoenix. `UFTPhoenix-<version>-win32-offline.zip`, which the build
+`MeritoPhoenixForUFT-<version>-Setup.exe` is the supported way to install Merito
+Phoenix for UFT. `UFTPhoenix-<version>-win32-offline.zip`, which the build
 produces beside it, is an internal build artifact — the payload the installer
 is compiled from — not a second way to install.

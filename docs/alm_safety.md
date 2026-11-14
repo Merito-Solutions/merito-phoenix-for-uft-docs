@@ -664,7 +664,7 @@ ever cleared.
   `UFT_MIGRATE_ALM_PASSWORD`. They stay on the machine, for the user who ran
   Phoenix, and are deleted after 30 days.
 - A support bundle (*Collect Diagnostics…*, the Start Menu shortcut *Merito
-  UFT Phoenix Collect Diagnostics*, `uft-migrate diagnostics collect`)
+  Phoenix for UFT Collect Diagnostics*, `uft-migrate diagnostics collect`)
   never contains test scripts, data tables, object repositories, function
   libraries, the settings cache, `.env` files or memory dumps. A value that
   follows a name such as `password` or `--password` is masked in every file.

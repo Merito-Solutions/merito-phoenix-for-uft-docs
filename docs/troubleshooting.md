@@ -22,7 +22,7 @@ edition, or your installed license.
 ALM and UFT automation require pywin32. What to do depends on how Phoenix was
 installed.
 
-**Installed with `MeritoUFTPhoenix-<version>-Setup.exe` (the recommended
+**Installed with `MeritoPhoenixForUFT-<version>-Setup.exe` (the recommended
 install).** pywin32 is already present in the product's own runtime, and the
 package build import-tests it before the package is sealed. If `doctor` still
 reports this, that runtime is damaged: run the installer again, as
@@ -62,16 +62,16 @@ files you copied in place, so a machine repaired on 26.1 stays repaired.
 Nothing was installed, and the edition did not change. The command printed
 `License not installed:` and the reason, and exited 2:
 
-- *… was changed after Merito issued it, or Merito did not issue it. UFT
-  Phoenix ignores it.* — the file's details no longer match Merito's
+- *… was changed after Merito issued it, or Merito did not issue it. Merito
+  Phoenix for UFT ignores it.* — the file's details no longer match Merito's
   signature. Install the file exactly as Merito sent it; if something in it
   must change, ask Merito for a new file.
 - *license … expired on* and the date — ask your Merito contact for a renewed
   file.
-- *… needs a newer version of UFT Phoenix.* — Merito issued it for a later
+- *… needs a newer version of Merito Phoenix for UFT.* — Merito issued it for a later
   release: upgrade Phoenix, then install it.
-- *… is not a UFT Phoenix license file.*, *… is not a valid license: …* or
-  *… is larger than 64 KB, so it is not a UFT Phoenix license.* — the file is
+- *… is not a Merito Phoenix for UFT license file.*, *… is not a valid license: …* or
+  *… is larger than 64 KB, so it is not a Merito Phoenix for UFT license.* — the file is
   not the one Merito sent, or was damaged on the way. Ask for it again.
 - *installing for all users needs administrator rights.* — `--all-users`
   writes to the install folder: run the command from a Command Prompt opened
@@ -107,7 +107,7 @@ test cases. It warns in three cases:
 - **No installed license file can be used (free edition).** The row names
   the first one and why — expired, changed, for a newer Phoenix — and counts
   the rest; `uft-migrate license` lists them all. An expired one reads *The
-  UFT Phoenix License File for* the licensee *expired on* the date, *The free
+  Merito Phoenix for UFT License File for* the licensee *expired on* the date, *The free
   edition now applies, covering conversions of up to 100 test cases.* Its
   `fix:` line asks you
   for a valid license file from Merito, installed with
@@ -119,8 +119,8 @@ test cases. It warns in three cases:
   what applies after that date: the free edition, or another installed
   license that outlives it. Ask Merito to renew it before then.
 - **Phoenix's own license key is damaged.** The row says *Built-in license
-  key … is damaged.*, or *This copy of UFT Phoenix has no usable license key,
-  so it accepts no license.*, and its fix line says *Reinstall UFT Phoenix.*
+  key … is damaged.*, or *This copy of Merito Phoenix for UFT has no usable license key,
+  so it accepts no license.*, and its fix line says *Reinstall Merito Phoenix for UFT.*
   Until you do, a license file signed with that key is refused as though
   Merito had not issued it, so asking Merito for another file would not help.
 
@@ -295,7 +295,7 @@ No test was converted, backed up or changed.*, and exits 2.
    ([licensing.md](licensing.md) § *Installing a license*); you do not have
    to run the analysis again.
 3. **With a license:** read why it did not apply. In the free edition, the
-   console's dialog lists each unused license under *UFT Phoenix did not use
+   console's dialog lists each unused license under *Merito Phoenix for UFT did not use
    the installed license:*, the command line puts the first reason in its
    message and all of them in `license_problems`, and `uft-migrate license`
    lists every license file with its reason. A license applies only while it
@@ -339,7 +339,7 @@ redirects that folder to `C:\Windows\SysWOW64`. That location is protected, so
 UFT cannot save the first rebuilt test there.
 
 **The same failure, launched from the install folder.** `C:\Program Files
-(x86)\Merito\UFT Phoenix` is no more writable than `System32`, so
+(x86)\Merito\Phoenix for UFT` is no more writable than `System32`, so
 double-clicking `bin\uft-migrate-gui.cmd` in Explorer produces the same denial
 with the install folder in the path. Launch from the Start Menu shortcut or a
 writable folder instead.
@@ -349,7 +349,7 @@ filesystem conversions write converted tests; the run folder always stays under
 the launch directory (see [gui_field_guide.md](gui_field_guide.md)).
 
 **Fix:** launch from the Start Menu shortcut (**Start Menu > Merito > Merito
-UFT Phoenix**). It always starts in the profile folder of whoever launches it,
+Phoenix for UFT**). It always starts in the profile folder of whoever launches it,
 so it cannot hit this problem. If you launch from a console instead, change to
 a writable folder *before* launching:
 
@@ -1042,7 +1042,7 @@ Two places outside the run folder:
 | Location | Contents |
 | --- | --- |
 | `%LOCALAPPDATA%\Merito\UFT Phoenix\logs\` | One diagnostics log per Phoenix process, JSON lines: what each process was, the errors it met (with the full traceback and the ALM client's error code) and how its child processes ended. A message that gives a reference such as `E-20261006T101500Z-7720-41` names an error recorded there in full; quote it to support. Kept 30 days. The ALM password is masked before a record is written: by its value when it is 6 characters or longer, and wherever it follows a name such as `password` |
-| `out\_support\` | The support bundles *Collect Diagnostics…* and the Start Menu shortcut *Merito UFT Phoenix Collect Diagnostics* write, each a zip with a folder of the same files beside it; when there is no `out\` folder, they go to `%LOCALAPPDATA%\Merito\UFT Phoenix\support\` |
+| `out\_support\` | The support bundles *Collect Diagnostics…* and the Start Menu shortcut *Merito Phoenix for UFT Collect Diagnostics* write, each a zip with a folder of the same files beside it; when there is no `out\` folder, they go to `%LOCALAPPDATA%\Merito\UFT Phoenix\support\` |
 
 When contacting support, quote the version you are running. The Migration
 Console shows it on every step, in the bottom-left corner of the dark panel on
@@ -1076,7 +1076,7 @@ only to provide that support, and deletes it within 30 days after you ask
    send. **No** closes the dialog, and you can still collect later. A
    conversion you stopped with **Cancel** asks nothing. A failed analysis has
    no dialog: its status line names **Collect Diagnostics…** (3 below).
-2. **The Start Menu shortcut:** **Start Menu > Merito > Merito UFT Phoenix
+2. **The Start Menu shortcut:** **Start Menu > Merito > Merito Phoenix for UFT
    Collect Diagnostics** (type *collect diagnostics* in Start search). It
    collects without opening the Migration Console, so it also works after you
    closed the console and when the console will not start. A small window
@@ -1151,7 +1151,7 @@ first look Merito support takes, which you can read too.
 function libraries (`alm_aom_work\`, `converted\`), the Migration Console's
 settings file, `.env` files, license files or memory dumps. ALM server, domain,
 project, user, test, folder and library names are replaced by tokens such as
-`project-1` and `test-3f9a2c`, and so is the licensee of a UFT Phoenix license
+`project-1` and `test-3f9a2c`, and so is the licensee of a Merito Phoenix for UFT license
 (`licensee-1`), with the ALM projects a license names, even inside Phoenix's
 own sentences about the license; the file that maps the tokens back,
 `…KEEP-PRIVATE-names.json`, stays beside the zip on this PC. The environment

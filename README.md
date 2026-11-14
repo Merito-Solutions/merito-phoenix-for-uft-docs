@@ -1,5 +1,5 @@
 <!--
-  Generated from the UFT Phoenix source repository by sync_to_github.py.
+  Generated from the Merito Phoenix for UFT source repository by sync_to_github.py.
   Do not edit this repository by hand: every publish replaces its contents.
 -->
 
@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://merito-solutions.github.io/merito-phoenix-for-uft-docs/">
-    <img src="docs/assets/hero.webp" alt="Merito UFT Phoenix — Migration Assistant for OpenText Functional Testing (UFT)" width="640">
+    <img src="docs/assets/hero.webp" alt="Merito Phoenix for UFT — Migration Assistant for OpenText Functional Testing (UFT)" width="640">
   </a>
 </p>
 
@@ -34,7 +34,7 @@
 ---
 
 VBScript is on Microsoft's deprecation path, and OpenText UFT One now runs
-tests written in Python. **Merito UFT Phoenix** converts your existing
+tests written in Python. **Merito Phoenix for UFT** converts your existing
 VBScript GUI tests into genuine UFT Python tests, so years of automation
 investment carries forward instead of being rewritten by hand.
 
@@ -51,7 +51,7 @@ investment carries forward instead of being rewritten by hand.
   [request scoping](https://www.merito.com/solutions/uft-phoenix/scope?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009), and read
   [how test cases are counted](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/licensing/).
 
-To request access to UFT Phoenix, use the
+To request access to Merito Phoenix for UFT, use the
 [request access](https://www.merito.com/request-access/uft-phoenix?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009) link.
 
 ## Documentation
@@ -96,8 +96,8 @@ and team enablement.
 
 ## About this repository
 
-This repository publishes the customer documentation for UFT Phoenix
-1.4.1. UFT Phoenix itself is proprietary software of Merito Solutions,
+This repository publishes the customer documentation for Merito Phoenix for UFT
+1.5.0. Merito Phoenix for UFT itself is proprietary software of Merito Solutions,
 Inc., and its source code is not published here. The software is licensed
 under the agreement in [LICENSE](LICENSE), the same one the installer shows.
 The documentation is © Merito Solutions, Inc., all rights reserved — see

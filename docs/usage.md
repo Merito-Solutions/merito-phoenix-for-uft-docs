@@ -1,6 +1,6 @@
 # Usage Guide
 
-UFT Phoenix converts OpenText UFT One (formerly Micro Focus UFT / QTP)
+Merito Phoenix for UFT converts OpenText UFT One (formerly Micro Focus UFT / QTP)
 VBScript GUI tests to UFT Python. There are exactly **two conversion
 paths**, with nothing in between:
 
@@ -339,7 +339,7 @@ logs, and on ALM it signs in and reads the Test Plan to count the test cases.
 `message`, repeated in `error` and once on stderr, begins *Conversion
 refused. No test was converted, backed up or changed.* and says what to do.
 When an installed license expired and no other applies, the next sentences
-say so: *The UFT Phoenix License File for Contoso Ltd expired on 2026-09-30.
+say so: *The Merito Phoenix for UFT License File for Contoso Ltd expired on 2026-09-30.
 The free edition now applies, covering conversions of up to 100 test
 cases.* The rest of
 the refusal says why:
@@ -405,7 +405,7 @@ installed license file cannot be used, saying why; with a license in use,
 such a file does not make the row warn, and the row names it after *Other
 license files:*. It warns when the license in use expires within 30 days;
 its `fix:` line then says what applies after that date. It also warns,
-with the fix *Reinstall UFT Phoenix.*, when Phoenix's own license key is
+with the fix *Reinstall Merito Phoenix for UFT.*, when Phoenix's own license key is
 damaged. With `--json`
 the document also carries `license`, with the keys `edition`,
 `edition_label`, `licensee`, `limit`, `license_id`, `expires`, `alm_bindings`
@@ -449,7 +449,7 @@ prompt, the install folder's. `license show` lists the ids. When several
 installed licenses apply, the one that allows the most is used.
 
 Every action exits **0** when it did its work and **2** when it refused or
-failed: a file that is not a UFT Phoenix license, a file Merito did not issue
+failed: a file that is not a Merito Phoenix for UFT license, a file Merito did not issue
 or that was changed, a license that has already expired, a file that needs a
 newer version of Phoenix, `--all-users` without administrator rights, or a
 license id that is not installed. A refused `install` prints
@@ -478,7 +478,7 @@ on this machine.
 When Merito support asks for diagnostics, `diagnostics collect` writes a support
 bundle; the Migration Console's **Collect Diagnostics…** button, and the Yes of
 its *Conversion Failed* dialog, run the same collector, and so does the Start
-Menu shortcut *Merito UFT Phoenix Collect Diagnostics*, as `pythonw.exe -m
+Menu shortcut *Merito Phoenix for UFT Collect Diagnostics*, as `pythonw.exe -m
 uft_migrate.diagnostics collect --show-result` started in the launching user's
 profile folder. Nothing is sent anywhere: the collector opens no network
 connection, creates no COM object, logs in to nothing and writes nothing into a

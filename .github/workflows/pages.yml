@@ -1,5 +1,5 @@
 # Builds the MkDocs site and deploys it to GitHub Pages.
-# Generated from the UFT Phoenix source repository -- edit it there, not here.
+# Generated from the Merito Phoenix for UFT source repository -- edit it there, not here.
 name: pages
 
 on:
