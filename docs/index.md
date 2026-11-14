@@ -20,7 +20,7 @@ rewritten by hand.
 
 To request access to Merito Phoenix for UFT, use the **Request access** button below.
 
-[Request access](https://www.merito.com/request-access/uft-phoenix?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009){ .md-button .md-button--primary }
+[Request access](https://www.merito.com/request-access/phoenix-for-uft?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009){ .md-button .md-button--primary }
 [Talk to Merito](https://www.merito.com/book-consultation?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009){ .md-button }
 
 ---
@@ -66,7 +66,7 @@ size the migration with you. If you like, send us the scoping summary the
 analysis writes: it holds counts and summary figures, with no names, paths,
 identifiers or test code.
 
-[Request scoping](https://www.merito.com/solutions/uft-phoenix/scope?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009){ .md-button }
+[Request scoping](https://www.merito.com/solutions/phoenix-for-uft/scope?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009){ .md-button }
 
 A license is a file you install. Phoenix checks it on your own machine and
 never contacts Merito. [Free Edition and Licensing](licensing.md) explains how

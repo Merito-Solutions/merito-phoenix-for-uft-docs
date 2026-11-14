@@ -19,14 +19,14 @@
   <img alt="ALM 24.1 | 25.1 | 26.1" src="https://img.shields.io/badge/ALM-24.1%20%7C%2025.1%20%7C%2026.1-2f8483?style=flat-square">
   <img alt="Windows 10 | 11 | Server 2019+" src="https://img.shields.io/badge/Windows-10%20%7C%2011%20%7C%20Server%202019%2B-0d2028?style=flat-square&logo=windows&logoColor=white">
   <img alt="VBScript to Python" src="https://img.shields.io/badge/VBScript%20%E2%86%92%20Python-3776AB?style=flat-square&logo=python&logoColor=ffd343">
-  <a href="https://www.merito.com/request-access/uft-phoenix?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009"><img alt="Access by request" src="https://img.shields.io/badge/access-by%20request-f7931e?style=flat-square"></a>
+  <a href="https://www.merito.com/request-access/phoenix-for-uft?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009"><img alt="Access by request" src="https://img.shields.io/badge/access-by%20request-f7931e?style=flat-square"></a>
   <a href="https://github.com/Merito-Solutions/merito-phoenix-for-uft-docs/actions/workflows/pages.yml"><img alt="Docs" src="https://img.shields.io/github/actions/workflow/status/Merito-Solutions/merito-phoenix-for-uft-docs/pages.yml?label=docs&style=flat-square"></a>
 </p>
 
 <p align="center">
   <a href="https://merito-solutions.github.io/merito-phoenix-for-uft-docs/"><strong>Read the documentation »</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://www.merito.com/request-access/uft-phoenix?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009">Request access</a>
+  <a href="https://www.merito.com/request-access/phoenix-for-uft?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009">Request access</a>
   &nbsp;·&nbsp;
   <a href="https://www.merito.com/book-consultation?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009">Talk to Merito</a>
 </p>
@@ -48,11 +48,11 @@ investment carries forward instead of being rewritten by hand.
   projects.
 - **Free for conversions of up to 100 test cases.** The analysis has no
   limit; a larger conversion needs a license from Merito —
-  [request scoping](https://www.merito.com/solutions/uft-phoenix/scope?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009), and read
+  [request scoping](https://www.merito.com/solutions/phoenix-for-uft/scope?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009), and read
   [how test cases are counted](https://merito-solutions.github.io/merito-phoenix-for-uft-docs/licensing/).
 
 To request access to Merito Phoenix for UFT, use the
-[request access](https://www.merito.com/request-access/uft-phoenix?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009) link.
+[request access](https://www.merito.com/request-access/phoenix-for-uft?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009) link.
 
 ## Documentation
 
@@ -92,7 +92,7 @@ OpenText functional testing and quality management. Our consultants can lead
 a UFT migration end to end: planning, pilots, blocker remediation, rollout
 and team enablement.
 
-[Book a consultation](https://www.merito.com/book-consultation?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009) · [Get a quote](https://www.merito.com/get-a-quote?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009) · [Request scoping](https://www.merito.com/solutions/uft-phoenix/scope?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009)
+[Book a consultation](https://www.merito.com/book-consultation?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009) · [Get a quote](https://www.merito.com/get-a-quote?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009) · [Request scoping](https://www.merito.com/solutions/phoenix-for-uft/scope?utm_source=other&utm_medium=referral&utm_campaign=merito-uft-phoenix-vbs-to-python-utility-5100009)
 
 ## About this repository
 

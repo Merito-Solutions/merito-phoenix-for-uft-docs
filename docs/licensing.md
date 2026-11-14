@@ -237,7 +237,7 @@ it too.
 To have a conversion over your edition's limit scoped, request a consultation
 on Merito's consultation request form:
 
-<https://www.merito.com/solutions/uft-phoenix/scope?utm_source=other&utm_medium=referral&utm_campaign=uft-phoenix-product-links-5100003>
+<https://www.merito.com/solutions/phoenix-for-uft/scope?utm_source=other&utm_medium=referral&utm_campaign=uft-phoenix-product-links-5100003>
 
 Sending Merito anything is your choice, and you are not obliged to send
 anything. Read the scoping summary before you send it. If you send it, or any
