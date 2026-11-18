@@ -5,7 +5,7 @@
 
 > [!WARNING]
 > **Preview — under review.** This is a pre-release preview of the Merito Phoenix for UFT
-> documentation, published from an unmerged change (branch feature/P4UFT-18-gov-terms-and-docs-header, commit fc10d60, published 2026-11-18 00:41 UTC). It is not a
+> documentation, published from an unmerged change (branch feature/P4UFT-18-gov-terms-and-docs-header, commit ab00b5e, published 2026-11-18 00:46 UTC). It is not a
 > release and may change or be withdrawn.
 
 
