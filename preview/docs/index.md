@@ -7,7 +7,7 @@ hide:
 ---
 
 <p align="center">
-  <img src="assets/hero.webp" alt="Merito Phoenix for UFT — Migration Assistant for OpenText Functional Testing (UFT)" width="720">
+  <img src="assets/hero.webp" alt="Merito Phoenix for UFT" width="720">
 </p>
 
 # Move your UFT One tests from VBScript to Python { .phoenix-headline }
