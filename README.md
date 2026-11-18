@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://merito-solutions.github.io/merito-phoenix-for-uft-docs/">
-    <img src="docs/assets/hero.webp" alt="Merito Phoenix for UFT — Migration Assistant for OpenText Functional Testing (UFT)" width="640">
+    <img src="docs/assets/hero.webp" alt="Merito Phoenix for UFT" width="640">
   </a>
 </p>
 
@@ -97,7 +97,7 @@ and team enablement.
 ## About this repository
 
 This repository publishes the customer documentation for Merito Phoenix for UFT
-1.5.0. Merito Phoenix for UFT itself is proprietary software of Merito Solutions,
+1.5.1. Merito Phoenix for UFT itself is proprietary software of Merito Solutions,
 Inc., and its source code is not published here. The software is licensed
 under the agreement in [LICENSE](LICENSE), the same one the installer shows.
 The documentation is © Merito Solutions, Inc., all rights reserved — see

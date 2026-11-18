@@ -65,8 +65,11 @@ OR USE THE SOFTWARE.
       "Deploy" means to save or upload a converted test to ALM or to any
       other place where you keep tests for use, or to use it in your
       regular testing.
-      "Order" means an order form, statement of work, or other written
-      agreement for the Software signed by you and Merito.
+      "Order" means an order form, statement of work, purchase order, or
+      other written agreement for the Software that is signed by you and
+      Merito, or that you enter into with a reseller Merito has authorized
+      to resell the Software, including a Government contract, task order,
+      or delivery order.
       "License File" means a file that Merito issues to you under an
       Order and signs digitally. It names you as the licensee and states
       the largest Conversion, in Test Cases, that it covers (or that it
@@ -298,7 +301,7 @@ OR USE THE SOFTWARE.
       that for up to thirty (30) days you may use it to restore tests from
       the backups it made or to roll back tests it converted, and you must
       then destroy all copies. Sections 1.d, 2 (except section 2.f, which
-      survives for two (2) years after termination), and 3 through 10
+      survives for two (2) years after termination), and 3 through 11
       survive termination.
    b. Merito may change or end the Free Edition at any time. A change,
       such as a different Test Case limit, applies to a version of the
@@ -332,7 +335,8 @@ OR USE THE SOFTWARE.
    INTERRUPTION, ARISING OUT OF OR RELATED TO THE SOFTWARE, EVEN IF
    ADVISED OF THE POSSIBILITY OF SUCH DAMAGES; AND (b) MERITO'S TOTAL
    AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE FEES PAID
-   BY YOU FOR THE SOFTWARE IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.
+   BY YOU, TO MERITO OR TO A RESELLER MERITO HAS AUTHORIZED, FOR THE
+   SOFTWARE IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.
    THE LIMITATIONS IN THIS SECTION 9 DO NOT APPLY TO LIABILITY THAT CANNOT
    BE LIMITED UNDER APPLICABLE LAW, INCLUDING LIABILITY FOR FRAUD OR FOR
    WILLFUL AND WANTON MISCONDUCT. YOU ACKNOWLEDGE THAT MERITO PROVIDES THE
@@ -357,6 +361,97 @@ OR USE THE SOFTWARE.
    remainder remains in effect. You may not assign this Agreement without
    Merito's prior written consent. No failure to enforce any provision
    waives it.
+
+11. U.S. GOVERNMENT AND PUBLIC SECTOR END USERS
+   a. Commercial Software. The Software and its documentation are a "commercial
+      product" as defined at FAR 2.101, consisting of "commercial computer
+      software" and "commercial computer software documentation" as those terms
+      are used in FAR 12.212 and DFARS 227.7202. Consistent with FAR 12.212 and
+      DFARS 227.7202-1 through 227.7202-4, U.S. Government end users acquire
+      the Software with only the rights set forth in this Agreement, as
+      modified by this section 11.
+   b. Federal End Users. Sections 11.c through 11.k apply when the licensee is
+      an agency or instrumentality of the United States Government (a "Federal
+      End User"). For a Federal End User, if any other term of this Agreement
+      conflicts with this section 11 or with Federal law, this section 11 and
+      Federal law control. If the Federal End User's Order incorporates GSAR
+      552.212-4(w) or a comparable clause, that clause also applies and
+      controls over any conflicting term of this Agreement.
+   c. Who Is Bound. This Agreement, as modified by this section 11, binds the
+      Federal End User as the licensee. It does not bind personally any
+      individual employee or contractor of the Federal End User, including one
+      who installs the Software, accepts this Agreement in the installer, or
+      uses the /ACCEPTEULA option, and the statement in the opening paragraph
+      that a person without authority accepts this Agreement for themselves
+      does not apply to that person.
+   d. Changes. Reinstalling, updating, or upgrading the Software does not
+      change the terms that apply to a Federal End User's Licensed Edition
+      under its Order. A change to this Agreement that is material to a Federal
+      End User's rights, prices, or obligations under its Order binds it only
+      through a bilateral written modification signed by a Contracting Officer.
+      For the Free Edition, each version of the Software is licensed on the
+      terms presented with that version, as modified by this section 11.
+   e. Governing Law and Disputes. For a Federal End User, this Agreement is
+      governed by the Federal law of the United States, and the choice of
+      Colorado law and the jurisdiction and venue provisions in section 10 do
+      not apply. Disputes are resolved under the Contract Disputes Act, 41
+      U.S.C. 7101-7109, where it applies, and otherwise in a Federal forum of
+      competent jurisdiction. Merito may seek injunctive relief, attorney fees,
+      costs, or interest against the Government only where a Federal statute
+      expressly allows it. Nothing in this Agreement requires binding
+      arbitration.
+   f. No Unilateral Termination. Except as this section 11.f allows, Merito
+      will not unilaterally revoke, terminate, or suspend a Federal End User's
+      rights under this Agreement, and sections 1.d and 7.a do not permit it to
+      do so. If Merito believes a Federal End User has breached this Agreement,
+      Merito may submit a claim under the Contract Disputes Act where it
+      applies, or pursue any other remedy Federal law allows, and the Federal
+      End User's rights continue, subject to this Agreement, while the claim is
+      resolved. The expiry of a License File at the end of the term stated in
+      its Order is not a revocation. Nothing in this section 11 limits Merito's
+      right under section 7.b to change or end the Free Edition, including for
+      a Federal End User, on the notice section 7.b requires. Ending the Free
+      Edition does not affect a Federal End User's Licensed Edition rights
+      under an Order, or its Converted Assets and the license in section 5, as
+      section 7.d provides.
+   g. Count Confirmation and Charges. A Contracting Officer or another official
+      with authority to bind the Federal End User may sign a confirmation under
+      section 2. Any amount Merito claims for Test Cases converted beyond a
+      License File is invoiced under the invoicing terms of the Federal End
+      User's Order, any dispute over it is resolved under section 11.e, and no
+      payment of a disputed amount is due until that dispute is resolved. Any
+      audit Merito requests is at Merito's expense.
+   h. Disclosure. Nothing in this Agreement restricts a Federal End User from
+      disclosing information as required by the Freedom of Information Act, 5
+      U.S.C. 552, or other Federal law. This Agreement and Merito's published
+      prices are not confidential. Information a Federal End User retains as
+      required by law remains subject to the confidentiality obligations of
+      this Agreement.
+   i. Contractors. A Federal End User's support contractors may install and use
+      the Software solely on the Federal End User's behalf to assess and
+      migrate the Federal End User's own test assets. That use is use by the
+      Federal End User and is not a service to a third party under section 2.e,
+      and each such contractor must comply with this Agreement.
+   j. Liability, Indemnity, and Assignment. Section 9 does not impair the
+      Government's right to recover for fraud or crimes arising out of or
+      relating to this Agreement under any Federal fraud statute, including the
+      False Claims Act, 31 U.S.C. 3729-3733, or the express remedies provided
+      in the Federal End User's Order. No term of this Agreement requires a
+      Federal End User to indemnify any person or to pay any amount beyond the
+      prices in its Order, and any such term is void as to the Government under
+      FAR 52.232-39. Merito will not assign this Agreement as to a Federal End
+      User except as Federal law permits, including 41 U.S.C. 6305.
+   k. Sensitive Information. A Federal End User must not send Merito classified
+      information or Controlled Unclassified Information under section 3.d or
+      6.c unless its Order provides for Merito to receive it.
+   l. State and Local Government End Users. If the licensee is a state or local
+      government entity and the laws governing it prohibit it from agreeing to
+      a term of this Agreement, including the choice of law and forum in
+      section 10, that term applies to it only to the extent those laws permit,
+      and section 10 is then governed by the laws of the licensee's state and
+      the courts those laws require. Nothing in this Agreement waives the
+      licensee's sovereign immunity, and a disclosure the licensee's public
+      records laws require does not breach this Agreement.
 
 Copyright (c) 2026 Merito Solutions, Inc. All rights reserved.
 OpenText, UFT One, Application Quality Management, ALM, Quality Center,

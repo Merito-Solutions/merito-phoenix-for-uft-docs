@@ -12,7 +12,7 @@ site_name: Merito Phoenix for UFT
 site_description: Convert OpenText UFT One VBScript tests to Python — from a folder of tests or a whole ALM project.
 site_author: Merito
 site_url: https://merito-solutions.github.io/merito-phoenix-for-uft-docs/
-copyright: "&copy; Merito Solutions, Inc. All rights reserved. Merito Phoenix for UFT 1.5.0."
+copyright: "&copy; Merito Solutions, Inc. All rights reserved. Merito Phoenix for UFT 1.5.1."
 
 repo_url: https://github.com/Merito-Solutions/merito-phoenix-for-uft-docs
 repo_name: "Merito-Solutions/merito-phoenix-for-uft-docs"
