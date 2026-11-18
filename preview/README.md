@@ -5,7 +5,7 @@
 
 > [!WARNING]
 > **Preview — under review.** This is a pre-release preview of the Merito Phoenix for UFT
-> documentation, published from an unmerged change (branch feature/P4UFT-18-gov-terms-and-docs-header, commit ab00b5e, published 2026-11-18 00:46 UTC). It is not a
+> documentation, published from an unmerged change (branch feature/P4UFT-18-gov-terms-and-docs-header, commit 3f00a6e, published 2026-11-18 00:51 UTC). It is not a
 > release and may change or be withdrawn.
 
 
@@ -101,7 +101,7 @@ and team enablement.
 ## About this repository
 
 This repository publishes the customer documentation for Merito Phoenix for UFT
-1.5.0. Merito Phoenix for UFT itself is proprietary software of Merito Solutions,
+1.5.1. Merito Phoenix for UFT itself is proprietary software of Merito Solutions,
 Inc., and its source code is not published here. The software is licensed
 under the agreement in [LICENSE](LICENSE), the same one the installer shows.
 The documentation is © Merito Solutions, Inc., all rights reserved — see

@@ -12,7 +12,7 @@ site_name: Merito Phoenix for UFT
 site_description: Convert OpenText UFT One VBScript tests to Python — from a folder of tests or a whole ALM project.
 site_author: Merito
 site_url: https://merito-solutions.github.io/merito-phoenix-for-uft-docs/preview/
-copyright: "&copy; Merito Solutions, Inc. All rights reserved. Merito Phoenix for UFT 1.5.0."
+copyright: "&copy; Merito Solutions, Inc. All rights reserved. Merito Phoenix for UFT 1.5.1."
 
 repo_url: https://github.com/Merito-Solutions/merito-phoenix-for-uft-docs
 repo_name: "Merito-Solutions/merito-phoenix-for-uft-docs"
@@ -62,7 +62,7 @@ extra:
   # true only for a --preview publish: noindex pages and a Preview banner.
   preview: true
   # A preview's branch, commit and publish time, shown in its banner.
-  preview_source: "branch feature/P4UFT-18-gov-terms-and-docs-header, commit ab00b5e, published 2026-11-18 00:46 UTC"
+  preview_source: "branch feature/P4UFT-18-gov-terms-and-docs-header, commit 3f00a6e, published 2026-11-18 00:51 UTC"
   generator: false
   social:
     - icon: fontawesome/solid/globe
