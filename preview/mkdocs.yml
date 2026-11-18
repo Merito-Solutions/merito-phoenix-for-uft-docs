@@ -62,7 +62,7 @@ extra:
   # true only for a --preview publish: noindex pages and a Preview banner.
   preview: true
   # A preview's branch, commit and publish time, shown in its banner.
-  preview_source: "branch feature/P4UFT-18-gov-terms-and-docs-header, commit 3f00a6e, published 2026-11-18 00:51 UTC"
+  preview_source: "branch feature/P4UFT-18-gov-terms-and-docs-header, commit aee1eb2, published 2026-11-18 18:24 UTC"
   generator: false
   social:
     - icon: fontawesome/solid/globe
