@@ -5,7 +5,7 @@
 
 > [!WARNING]
 > **Preview — under review.** This is a pre-release preview of the Merito Phoenix for UFT
-> documentation, published from an unmerged change (branch feature/P4UFT-8-sharepoint-release-publish, commit 36ecbf5, published 2026-11-26 03:06 UTC). It is not a
+> documentation, published from an unmerged change (branch feature/P4UFT-8-sharepoint-release-publish, commit d48be18, published 2026-11-26 03:34 UTC). It is not a
 > release and may change or be withdrawn.
 
 

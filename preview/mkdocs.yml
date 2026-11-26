@@ -62,7 +62,7 @@ extra:
   # true only for a --preview publish: noindex pages and a Preview banner.
   preview: true
   # A preview's branch, commit and publish time, shown in its banner.
-  preview_source: "branch feature/P4UFT-8-sharepoint-release-publish, commit 36ecbf5, published 2026-11-26 03:06 UTC"
+  preview_source: "branch feature/P4UFT-8-sharepoint-release-publish, commit d48be18, published 2026-11-26 03:34 UTC"
   generator: false
   social:
     - icon: fontawesome/solid/globe
