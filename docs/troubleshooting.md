@@ -613,7 +613,7 @@ and then finds none of the repository's objects at run time, so Phoenix stops
 before any of the test's own files are uploaded.
 
 The run first converts the test again, up to twice, noting *pre-upload build
-failure with an unrecognised message; retrying it as transient*. If it still
+failure with an unrecognized message; retrying it as transient*. If it still
 fails, the conversion stops like any other failed asset and rolls back what it
 uploaded. Resource relations the conversion had already added to the test in
 ALM, such as the one to the helper runtime library, stay in place: a rollback
