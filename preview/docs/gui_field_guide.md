@@ -195,7 +195,43 @@ folder and fills the field in for you.
 
 **Output Root** — where **converted tests** are written on the filesystem
 path, mirroring the source layout: each test lands at `<output root>/<its
-path relative to the source root>`. It does **not** move the reports and
+path relative to the source root>`. A source folder that is itself one UFT
+test lands at `<output root>/<test folder name>`, so it keeps its name —
+unless the Output Root is itself a UFT test folder (typically that test's
+earlier conversion), or is named after the test, in which case the test is
+written to the Output Root itself. Phoenix will not write into an Output
+Root that holds a UFT test still in VBScript (the test is refused with
+status `blocked`, and that folder is left as it is), but a converted
+(Python) test there is replaced under `backup` or `overwrite`, whichever
+test it is, and the published test takes the folder's name (when that
+differs from the test's own name, the test's notes say it was renamed). So
+point the Output Root at another converted test's folder only if you mean to
+replace it. A test whose folder is a whole drive (`E:\`) or a network
+share (`\\server\Login`) has no folder name of its own: it lands at
+`<output root>/<share name>`, or for a drive at `<output root>/<test name>`,
+the name of its `.usr` file. An Output Root (or a test's folder under it)
+that exists but is completely empty counts as not there yet, under every
+Overwrite Policy, even when it is marked read-only: a fresh folder you just
+made for the converted tests is fine. Phoenix refuses
+(*Output Root conflict: …*) any test whose folder would be the `out` reports
+folder, a run folder, a folder that contains the current run's folder, or a
+folder inside a run folder, because writing a converted test there would
+replace or mix with the run's reports; `out\<run id>\converted`, the default
+for a blank Output Root, and `out\<test>` beside the run folders are fine,
+as long as the Analysis Run ID is not the test's name (see **Analysis Run
+ID**). It refuses the same way a test whose folder would be its own source folder
+or a folder that holds it — say an Output Root that is the folder holding
+the chosen test, or one named after the test with the test inside it —
+because Convert Mode `new` leaves the source test untouched. An Output Root
+that *is* the source folder is the exception: under Overwrite Policy
+`backup` or `overwrite` each test is converted onto itself and the original
+kept as `<name>.bak` (or `<name>.bak1`, `.bak2` … when that name is taken);
+under `fail`, the default, each test is refused, because its folder is not
+empty. A test whose folder is a whole drive or share cannot be converted
+onto itself under any policy, because that folder cannot be renamed: give it
+another Output Root.
+Nothing is written for a refused test: choose another Output Root and
+convert again. It does **not** move the reports and
 logs: those always go to `out/<run id>/` under the directory Phoenix was
 launched from. When you start the console from the Start Menu shortcut, that
 directory is your Windows profile folder, so runs land in
@@ -409,6 +445,22 @@ Convert Mode after an analysis makes it **STALE**.
 (stop rather than touch existing output), `backup` (set the existing output
 aside, then write), or `overwrite` (replace it). Use `backup` when iterating
 on a suite you have already converted once and want to diff generations.
+`backup` keeps the existing folder beside it as `<name>.bak`, or as
+`<name>.bak1`, `.bak2` … when that name is taken. An empty folder is not
+existing output under any policy, even when it is marked read-only. Under
+`fail`, a test whose folder already holds something is refused before UFT
+is closed and before it is converted, with *Target exists and overwrite
+policy is 'fail': <folder>. Nothing was built and no shared function library
+was written.*, followed by what to do: choose an empty Output Root, or set
+the policy to `backup` (the message names the folder it would keep the
+existing one as) or `overwrite`, and convert again. When that folder is the
+root of a drive or share (`E:\`, `\\server\share`), the message says only to
+choose an empty Output Root: `backup` and `overwrite` both rename the
+existing folder first, and a drive or share root cannot be renamed. If
+that folder appears, or fills, while the test is being converted, the same
+refusal comes at the end instead and says so; the converted test is then
+left in a `_phoenix_build_…` folder beside it, and the folder that appeared
+is not changed.
 
 Under Convert Mode `in-place` the policy you pick is overridden: Phoenix
 always uses `backup`, because the destination is the original test. `fail`
@@ -417,14 +469,18 @@ VBScript. The run log and the test's notes say when that happened.
 
 Read "existing output" literally: under Convert Mode `in-place` the
 destination *is* the source test, so `backup` renames the customer's
-original VBScript test to `<name>.bak` and the live `<name>` directory then
-holds the Python. That `.bak` is the only pre-conversion copy left on disk,
+original VBScript test to `<name>.bak` (or to the first free `<name>.bak1`,
+`.bak2` … when a folder of that name is already there, say a snapshot of
+your own; the test's notes name it) and the live `<name>` directory then
+holds the Python. That backup is the only pre-conversion copy left on disk,
 and Phoenix does not re-discover it by name — so a second in-place run finds
 only the already-converted `<name>` and cannot re-apply a converter fix or a
 changed VBS Preservation Mode to it. To re-convert from VBScript, rename
-`<name>.bak` back first. Every later generation (`.bak1`, `.bak2`, …) is a
-full copy of an already-converted tree and is safe to prune; `<name>.bak` is
-not.
+`<name>.bak` back first (or the generation the notes named, when that name
+was taken). Each later generation is a full copy of an already-converted
+tree and is safe to prune; the one that holds the VBScript (its action
+folders hold `Script.mts`) is not. When more than one generation sits beside
+the test, its notes say whether the one this run made holds the VBScript.
 
 **Parallel Mode (no effect)** — **has no effect today; do not rely on it.**
 The label used to promise that the VBScript and Python versions were kept
@@ -575,7 +631,17 @@ says the same (see *Over the free-edition limit* below).
 directory Phoenix was launched from (the run folder is always there; the
 Output Root does not move it). Started from the Start Menu shortcut, that is
 your Windows profile folder. Auto-derived from domain/project/folder; override
-it to keep engagements tidy (`WAVE1_ANALYSIS`).
+it to keep engagements tidy (`WAVE1_ANALYSIS`). When the first source folder
+is itself one UFT test, or holds a folder of its own name, one test or a
+folder of tests (`Login_Flow\Login_Flow`, `Regression\Regression\Login`, as an
+extracted zip leaves it), the derived ID never repeats that name:
+`Login_Flow` gives `Login_Flow_run`. The test is converted into
+`<Output Root>\Login_Flow`, and with the default Output Root `out` a run folder
+of that name would be its destination, which Phoenix refuses (*Output Root
+conflict*). A name with spaces already gives a different ID and is left as it
+is (`Phoenix UFT Showcase` gives `Phoenix_UFT_Showcase`). An ID you type is
+used as typed, so do not type the test's folder name while the Output Root is
+`out`.
 
 Three things follow from this one field:
 
@@ -741,6 +807,33 @@ explanation and next step. When the crash budget ran out and the wave was
 rolled back, the dialog lists the outcome by status instead, with the
 `process-crashed` asset among them.
 
+On the filesystem workflow, when tests were not converted, *Conversion
+Failed* starts with how many (*1 test was not converted.*), then names each
+test, up to three, with its reason, then what to do, then the path of the
+Conversion report. A long reason is shortened, but its last sentence, which
+says what to change, is kept. A test refused because its destination folder
+already exists while **Overwrite Policy** is `fail` reads *the destination
+folder already exists and is not empty, and Overwrite Policy is 'fail', so
+nothing was changed*, followed by the folder, and the dialog says what to do:
+choose an empty **Output Root**, or set **Overwrite Policy** to `backup` or
+`overwrite`, then click **Run Conversion** again. It names the folder `backup`
+keeps the existing one as: `<name>.bak`, or `<name>.bak1`, `<name>.bak2` …
+when that name is taken. When the Output Root is the source folder itself, it
+says instead that each test would replace its own source test: choose an
+empty Output Root outside the source folder to leave the source tests as they
+are, or set `backup` or `overwrite` to replace them with their conversion.
+When the folder is the root of a drive or share, it says only to choose an
+empty Output Root, because `backup` and `overwrite` cannot rename a root. When
+the folder was created or filled while the test was being converted, it says
+so and names the folder the converted test was left in. A
+destination that would replace the reports folder, a run folder or the test's
+own source folder, or mix converted tests into a run's reports, reads *Output
+Root conflict: …*: choose another **Output Root**. A shared function library
+that already exists with different content under `fail` reads *shared function
+library … already exists with different content*: choose an empty Output Root,
+or set `backup` or `overwrite` to rewrite it (tests converted there earlier
+load it too).
+
 The run folder is reused by every run with the same Run ID, so it can hold an
 earlier run's reports. The console only shows reports the current run wrote:
 if the conversion process ends without writing any — a crash nothing recovered
@@ -766,6 +859,14 @@ Failed* ends with the line *To send details to Merito support, use Collect
 Diagnostics (bottom left). Nothing is sent automatically.* instead. So does the
 status line of a failed analysis, and of an analysis or conversion that could
 not start, which have no dialog.
+
+A filesystem conversion whose only problem is a setting or a folder layout you
+change is not asked about either: when every test that was not converted was
+refused over an existing destination or shared function library under
+**Overwrite Policy** `fail`, over an *Output Root conflict*, or because its
+destination would replace another test or another test's converted output
+(that reason ends with what to change), and no other check failed,
+*Conversion Failed* ends with the Conversion report's path and asks nothing.
 
 A conversion the command line refused over the free edition's limit is not a
 failure either. Its dialog is *Conversion Blocked — Scoping Required*: the

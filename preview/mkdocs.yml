@@ -62,7 +62,7 @@ extra:
   # true only for a --preview publish: noindex pages and a Preview banner.
   preview: true
   # A preview's branch, commit and publish time, shown in its banner.
-  preview_source: "branch feature/P4UFT-20-scan-accuracy, commit 32d4ca3, published 2026-11-26 17:23 UTC"
+  preview_source: "branch feature/P4UFT-20-scan-accuracy, commit 7c51473, published 2026-11-28 00:27 UTC"
   generator: false
   social:
     - icon: fontawesome/solid/globe

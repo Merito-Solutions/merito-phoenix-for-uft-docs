@@ -315,6 +315,57 @@ again without `--resume` once the count is within the limit
 analysis in the run folder as it was, so Step 5 keeps its reports and
 **Convert Project** works once a license is installed.
 
+### "Target exists and overwrite policy is 'fail'" (`publish-failed`)
+On the UFT FileSystem workflow, the folder a test converts to already holds
+something and Overwrite Policy is `fail`, so that folder was left as it is;
+the message names the folder. Phoenix checks this before it closes UFT or
+converts the test, so normally nothing was written for that test at all (the
+one exception, a folder that appears during the conversion, is described
+below). An empty folder does not count, even one marked read-only. Choose an empty Output Root, or set Overwrite
+Policy to `backup` (the existing folder is kept as `<name>.bak`, or as
+`<name>.bak1`, `.bak2` … when that name is taken; the message names it)
+or `overwrite`, and convert again. When the folder is the root of a drive or
+share (`E:\`, `\\server\share`), the message says only to choose an empty
+Output Root: `backup` and `overwrite` both rename the existing folder first,
+and a drive or share root cannot be renamed. If the message adds that the folder
+appeared, or was filled, while the test was being converted, something wrote
+to it during the conversion: nothing in it was changed, and the converted
+test was left in the `_phoenix_build_…` folder the message names, beside it.
+When the Output Root is the source folder itself, the folder named is the
+source test, and the message says so: `backup` and `overwrite` would then
+replace it with its conversion (the original kept under the `.bak` name the
+message gives), so choose an Output Root outside the source folder to leave
+it as it is.
+A source folder that is itself one UFT test is written to `<Output
+Root>\<test folder name>`, not to the Output Root itself, unless the Output
+Root is itself a UFT test folder (typically that test's earlier conversion:
+a converted test it holds is replaced under `backup` or `overwrite`, while a
+test still in VBScript is refused with status `blocked` and left as it is)
+or is named after it ([gui_field_guide.md](gui_field_guide.md) § *General
+Settings*, **Output Root**).
+
+### "Output Root conflict: …" (status `blocked`)
+The folder a test would be written to is the `out` reports folder, a run
+folder, a folder that contains the current run's folder, or a folder inside a
+run folder. Writing a converted test there replaces the whole folder or mixes
+the test into the run's reports, so the test was refused and nothing was
+written. The message names the folder. Choose another Output Root — an empty
+folder of its own — and convert again. `out\<test>` beside the run folders,
+and the default `out\<run id>\converted` for a blank Output Root, are not
+affected, unless the Analysis Run ID is the test's own name: then
+`out\<test>` is the run folder, so type another Run ID. When the first source
+folder is a test, or holds a folder of its own name, the Run ID the Migration
+Console fills in adds `_run` to avoid this.
+
+The same refusal covers a folder that is the test's own source folder, or
+contains it: for example an Output Root that is the folder holding the test
+you chose as the source folder, or one named after the test with the test
+inside it. Convert Mode `new` leaves the source test untouched, so choose an
+Output Root that is not a folder the test sits in. To replace the source test
+with its conversion instead, use Convert Mode `in-place`, which keeps the
+original as `<name>.bak` (or `<name>.bak1`, `.bak2` … when that name is
+taken; the message names it).
+
 ### `Access to the path 'C:\Windows\SysWOW64\out\...' is denied` — the whole run fails
 The conversion stops on the first test with an error like:
 
@@ -1074,7 +1125,10 @@ only to provide that support, and deletes it within 30 days after you ask
    still running, as soon as it ends: its *Diagnostics Saved* then says the
    failed run is collected next, and the zip saved after it is the one to
    send. **No** closes the dialog, and you can still collect later. A
-   conversion you stopped with **Cancel** asks nothing. A failed analysis has
+   conversion you stopped with **Cancel** asks nothing, nor does a filesystem
+   conversion refused only over a destination folder that already exists
+   (Overwrite Policy `fail`) or an Output Root conflict: the dialog says what
+   to change instead. A failed analysis has
    no dialog: its status line names **Collect Diagnostics…** (3 below).
 2. **The Start Menu shortcut:** **Start Menu > Merito > Merito Phoenix for UFT
    Collect Diagnostics** (type *collect diagnostics* in Start search). It

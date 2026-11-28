@@ -5,7 +5,7 @@
 
 > [!WARNING]
 > **Preview — under review.** This is a pre-release preview of the Merito Phoenix for UFT
-> documentation, published from an unmerged change (branch feature/P4UFT-20-scan-accuracy, commit 32d4ca3, published 2026-11-26 17:23 UTC). It is not a
+> documentation, published from an unmerged change (branch feature/P4UFT-20-scan-accuracy, commit 7c51473, published 2026-11-28 00:27 UTC). It is not a
 > release and may change or be withdrawn.
 
 
